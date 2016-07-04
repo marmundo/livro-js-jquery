@@ -54,7 +54,8 @@ function onDocumentLoad() {
 	}
 }
 
-document.getElementsByClassName=function(className) {
+if(document.getElementsByClassName===undefined){
+	document.getElementsByClassName=function(className) {
 	var todosElementos=document.getElementByTagName(*);
 	var resultados=[];
 
@@ -65,6 +66,8 @@ document.getElementsByClassName=function(className) {
 			resultados.push(elemento);
 		}
 	}
+}
+	
 }
 
 window.onload = onDocumentLoad;
