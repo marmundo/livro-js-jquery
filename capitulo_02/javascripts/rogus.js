@@ -66,8 +66,8 @@ if(document.getElementsByClassName===undefined){
 			resultados.push(elemento);
 		}
 	}
-}
-	
+	return resultados;
+	}
 }
 
 window.onload = onDocumentLoad;
