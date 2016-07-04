@@ -54,4 +54,17 @@ function onDocumentLoad() {
 	}
 }
 
+document.getElementsByClassName=function(className) {
+	var todosElementos=document.getElementByTagName(*);
+	var resultados=[];
+
+	var elemento;
+	for (var i = 0; (elemento=todosElementos[i])!=null ; i++) {
+		var elementClass= elemento.className;
+		if (elementClass && elementClass.indexOf(className)!=-1) {
+			resultados.push(elemento);
+		}
+	}
+}
+
 window.onload = onDocumentLoad;
